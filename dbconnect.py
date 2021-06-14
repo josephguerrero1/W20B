@@ -2,6 +2,7 @@ import traceback
 import mariadb
 import dbcreds
 
+
 def get_db_connection():
     try:
         return mariadb.connect(user=dbcreds.user, password=dbcreds.password, host=dbcreds.host, port=dbcreds.port, database=dbcreds.database)
